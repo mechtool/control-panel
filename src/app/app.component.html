@@ -1,2 +1,12 @@
-Ghb
-<router-outlet />
+<div class="app-shell-container">
+  <p-toolbar >
+    <ng-template pTemplate="end">
+        <p-button class="toolbar-button" type="button" icon="pi pi-cog"></p-button>
+        <p-button class="toolbar-button" type="button"  (click)="sidebarVisible3 = true" icon="pi pi-arrow-down"></p-button>
+    </ng-template>
+  </p-toolbar>
+  <p-sidebar [(visible)]="sidebarVisible3" position="top">
+    <h3>Top Sidebar</h3>
+  </p-sidebar>
+  <router-outlet></router-outlet>
+</div>

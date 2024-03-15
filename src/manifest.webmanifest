@@ -6,7 +6,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "display_override": ["fullscreen", "standalone", "minimal-ui", "window-controls-overlay"],
-  "prefer_related_applications": "true",
+  "prefer_related_applications": true,
   "scope": "./",
   "start_url": "./",
   "screenshots" : [
