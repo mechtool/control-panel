@@ -1,12 +1,9 @@
 <div class="app-shell-container">
-  <p-toolbar >
+  <p-toolbar class="app-shell-toolbar">
     <ng-template pTemplate="end">
-        <p-button class="toolbar-button" type="button" icon="pi pi-cog"></p-button>
-        <p-button class="toolbar-button" type="button"  (click)="sidebarVisible3 = true" icon="pi pi-arrow-down"></p-button>
+        <p-button class="toolbar-button technical-blocks" [routerLink]="['technical-blocks']" type="button" icon="pi pi-bars"></p-button>
+        <p-button class="toolbar-button settings" [routerLink]="['settings']" type="button" icon="pi pi-cog"></p-button>
     </ng-template>
   </p-toolbar>
-  <p-sidebar [(visible)]="sidebarVisible3" position="top">
-    <h3>Top Sidebar</h3>
-  </p-sidebar>
   <router-outlet></router-outlet>
 </div>

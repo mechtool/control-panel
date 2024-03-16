@@ -1,5 +1,11 @@
-:host p-toolbar ::ng-deep div.p-toolbar{
+:host,
+.app-shell-container{
+  height: 100%;
+  display: block;
+}
+:host p-toolbar.app-shell-toolbar ::ng-deep div.p-toolbar{
   justify-content: flex-end !important;
+  border-radius: unset;
 }
 .toolbar-button:first-child{
   margin-right: 8px;

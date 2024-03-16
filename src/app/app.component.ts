@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterOutlet} from '@angular/router';
 import {ButtonModule} from "primeng/button";
 import {ToolbarModule} from "primeng/toolbar";
-import {MenuItem} from "primeng/api";
 import {RippleModule} from "primeng/ripple";
-import {SidebarModule} from "primeng/sidebar";
+import {MainServiceService} from "./services/main-service.service";
 
 @Component({
   selector: 'app-root',
@@ -14,12 +13,12 @@ import {SidebarModule} from "primeng/sidebar";
     ToolbarModule,
     ButtonModule,
     RippleModule,
-    SidebarModule,
+    RouterLink,
   ],
-
+  providers: [
+    MainServiceService
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  sidebarVisible3: boolean = false
-}
+export class AppComponent {}
