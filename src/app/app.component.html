@@ -1,5 +1,16 @@
 <div class="app-shell-container">
   <p-toolbar class="app-shell-toolbar">
+    <ng-template pTemplate="start">
+      <p-avatar class="user-avatar" pBadge
+        size="large"
+        styleClass="mr-5"
+        [label]="userSymbol"
+        [value]="badgeValue"
+        [style]="userAvatarStyle"
+        [badgeDisabled]="!badgeValue"
+        (click)="onClickAvatar()"
+      ></p-avatar>
+    </ng-template>
     <ng-template pTemplate="end">
         <p-button class="toolbar-button technical-blocks" [routerLink]="['technical-blocks']" type="button" icon="pi pi-bars"></p-button>
         <p-button class="toolbar-button settings" [routerLink]="['settings']" type="button" icon="pi pi-cog"></p-button>

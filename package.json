@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "check": "npm run build & npm run serve",
     "serve": "http-server -p=4200 dist/control-panel/browser",
     "start": "ng serve",
     "build": "ng build",
