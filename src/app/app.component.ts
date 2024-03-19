@@ -19,7 +19,7 @@ import { BadgeModule } from 'primeng/badge';
     RouterLink,
     AvatarModule,
     AvatarGroupModule,
-    BadgeModule
+    BadgeModule,
   ],
   providers: [
     MainServiceService

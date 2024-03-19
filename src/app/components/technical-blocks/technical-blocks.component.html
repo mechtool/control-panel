@@ -1,1 +1,10 @@
-<p>technical-blocks works!</p>
+<div class="technical-blocks-container">
+  <div class="technical-blocks-base">
+    <ng-container *ngFor="let item of technicalBlocksMeta">
+      <p-card pRipple [style]="{width: '200px', height: '200px', margin: '8px', cursor: 'pointer'}"
+        [header]="item.header"
+        [subheader]="item.subheader">
+      </p-card>
+    </ng-container>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 :host,
 .app-shell-container{
   height: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 :host p-toolbar.app-shell-toolbar ::ng-deep div.p-toolbar{
   border-radius: unset;

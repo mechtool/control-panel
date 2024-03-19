@@ -1,0 +1,14 @@
+:host{
+  flex: 1 1 0;
+  overflow-y: auto;
+}
+div.technical-blocks-base,
+div.technical-blocks-container{
+  height: 100%;
+}
+div.technical-blocks-base{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
